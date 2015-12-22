@@ -1,0 +1,83 @@
+# Copyright (C) 2015 Braad Martin, Carrie Forde, Jordan Gonzales
+# This file is distributed under the GPL-3.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Alcatraz Designer 1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/alcatraz-designer\n"
+"POT-Creation-Date: 2015-12-22 19:42:38+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.3\n"
+
+#: classes/class-alcatraz-designer-customize.php:83
+msgid "Header Background Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:107
+msgid "Header Text Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:131
+msgid "Body Background Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:155
+msgid "Body Text Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:179
+msgid "Menu Background Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:203
+msgid "Menu Text Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:227
+msgid "Sub Menu Background Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:251
+msgid "Sub Menu Text Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:275
+msgid "Sidebar Background Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:276
+msgid "Only shows on certain page layouts"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:300
+msgid "Sidebar Text Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:324
+msgid "Footer Background Color"
+msgstr ""
+
+#: classes/class-alcatraz-designer-customize.php:348
+msgid "Footer Text Color"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Alcatraz Designer"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://alcatraztheme.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A plugin for design customization of the Alcatraz theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Braad Martin, Carrie Forde, Jordan Gonzales"
+msgstr ""
