@@ -10,18 +10,6 @@
 	 * Handle live previewing via postMessage.
 	 */
 
-	wp.customize( 'alcatraz_designer_options[header_bg_color]', function( value ) {
-		value.bind( function( to ) {
-			$( '.site-header' ).css( 'background-color', to );
-		});
-	});
-
-	wp.customize( 'alcatraz_designer_options[header_text_color]', function( value ) {
-		value.bind( function( to ) {
-			$( '.site-header' ).css( 'color', to );
-		});
-	});
-
 	wp.customize( 'alcatraz_designer_options[body_bg_color]', function( value ) {
 		value.bind( function( to ) {
 			$body.css( 'background-color', to );
@@ -31,6 +19,18 @@
 	wp.customize( 'alcatraz_designer_options[body_text_color]', function( value ) {
 		value.bind( function( to ) {
 			$body.css( 'color', to );
+		});
+	});
+
+	wp.customize( 'alcatraz_designer_options[header_bg_color]', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-header' ).css( 'background-color', to );
+		});
+	});
+
+	wp.customize( 'alcatraz_designer_options[header_text_color]', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-header' ).css( 'color', to );
 		});
 	});
 
@@ -55,6 +55,7 @@
 	wp.customize( 'alcatraz_designer_options[sub_menu_text_color]', function( value ) {
 		value.bind( function( to ) {
 			$( '#primary-menu .sub-menu, #primary-menu .sub-menu a, .header-style-default .main-navigation #primary-menu .sub-menu .menu-item a, .header-style-short .main-navigation #primary-menu .sub-menu .menu-item a' ).css( 'color', to ).css( 'border-color', to );
+			$( '#primary-menu .sub-menu-toggle .sub-menu-toggle-span' ).css( 'background-color', to );
 		});
 	});
 

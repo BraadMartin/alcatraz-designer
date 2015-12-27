@@ -64,20 +64,20 @@ class Alcatraz_Designer {
 
 		$styles = array();
 
-		if ( ! empty( $this->options['header_bg_color'] ) ) {
-			$styles[] = '.site-header { background-color: ' . $this->options['header_bg_color'] . '; }';
-		}
-
-		if ( ! empty( $this->options['header_text_color'] ) ) {
-			$styles[] = '.site-header { color: ' . $this->options['header_text_color'] . '; }';
-		}
-
 		if ( ! empty( $this->options['body_bg_color'] ) ) {
 			$styles[] = 'body { background-color: ' . $this->options['body_bg_color'] . '; }';
 		}
 
 		if ( ! empty( $this->options['body_text_color'] ) ) {
 			$styles[] = 'body { color: ' . $this->options['body_text_color'] . '; }';
+		}
+
+		if ( ! empty( $this->options['header_bg_color'] ) ) {
+			$styles[] = '.site-header { background-color: ' . $this->options['header_bg_color'] . '; }';
+		}
+
+		if ( ! empty( $this->options['header_text_color'] ) ) {
+			$styles[] = '.site-header { color: ' . $this->options['header_text_color'] . '; }';
 		}
 
 		if ( ! empty( $this->options['menu_bg_color'] ) ) {
@@ -94,6 +94,7 @@ class Alcatraz_Designer {
 
 		if ( ! empty( $this->options['sub_menu_text_color'] ) ) {
 			$styles[] = '.main-navigation #primary-menu .sub-menu a, .header-style-default .main-navigation #primary-menu .sub-menu .menu-item a, .header-style-short .main-navigation #primary-menu .sub-menu .menu-item a { color: ' . $this->options['sub_menu_text_color'] . '; border-color: ' . $this->options['sub_menu_text_color'] . '; }';
+			$styles[] = '#primary-menu .sub-menu-toggle .sub-menu-toggle-span { background-color: ' . $this->options['sub_menu_text_color'] . '; }';
 		}
 
 		if ( ! empty( $this->options['sidebar_bg_color'] ) ) {
