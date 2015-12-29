@@ -97,12 +97,20 @@ class Alcatraz_Designer {
 			$styles[] = '#primary-menu .sub-menu-toggle .sub-menu-toggle-span { background-color: ' . $this->options['sub_menu_text_color'] . '; }';
 		}
 
+		if ( ! empty( $this->options['content_bg_color'] ) ) {
+			$styles[] = '.content-area { background-color: ' . $this->options['content_bg_color'] . '; }';
+		}
+
+		if ( ! empty( $this->options['content_text_color'] ) ) {
+			$styles[] = '.content-area, .content-area h1, .content-area h2, .content-area h3, .content-area h4, .content-area h5, .content-area h6 { color: ' . $this->options['content_text_color'] . '; }';
+		}
+
 		if ( ! empty( $this->options['sidebar_bg_color'] ) ) {
 			$styles[] = '.primary-sidebar { background-color: ' . $this->options['sidebar_bg_color'] . '; }';
 		}
 
 		if ( ! empty( $this->options['sidebar_text_color'] ) ) {
-			$styles[] = '.primary-sidebar { color: ' . $this->options['sidebar_text_color'] . '; }';
+			$styles[] = '.primary-sidebar, .primary-sidebar h1, .primary-sidebar h2, .primary-sidebar h3, .primary-sidebar h4, .primary-sidebar h5, .primary-sidebar h6 { color: ' . $this->options['sidebar_text_color'] . '; }';
 		}
 
 		if ( ! empty( $this->options['footer_bg_color'] ) ) {

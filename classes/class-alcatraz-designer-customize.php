@@ -89,30 +89,6 @@ class Alcatraz_Designer_Customize {
 			)
 		);
 
-		// Body Text.
-		$wp_customize->add_setting(
-			'alcatraz_designer_options[body_text_color]',
-			array(
-				'default'     => $defaults['body_text_color'],
-				'type'        => 'option',
-				'capability'  => 'edit_theme_options',
-				'transport'   => 'postMessage'
-			)
-		);
-		$wp_customize->add_control(
-			new Alcatraz_Customize_Alpha_Color_Control(
-				$wp_customize,
-				'alcatraz_designer_options_body_text_color',
-				array(
-					'label'         => __( 'Body Text Color', 'alcatraz-designer' ),
-					'section'       => 'colors',
-					'settings'      => 'alcatraz_designer_options[body_text_color]',
-					'show_opacity'  => true,
-					'palette'       => $text_colors,
-				)
-			)
-		);
-
 		// Header Background.
 		$wp_customize->add_setting(
 			'alcatraz_designer_options[header_bg_color]',
@@ -257,6 +233,54 @@ class Alcatraz_Designer_Customize {
 			)
 		);
 
+		// Content Area Background.
+		$wp_customize->add_setting(
+			'alcatraz_designer_options[content_bg_color]',
+			array(
+				'default'     => $defaults['content_bg_color'],
+				'type'        => 'option',
+				'capability'  => 'edit_theme_options',
+				'transport'   => 'postMessage'
+			)
+		);
+		$wp_customize->add_control(
+			new Alcatraz_Customize_Alpha_Color_Control(
+				$wp_customize,
+				'alcatraz_designer_options_content_bg_color',
+				array(
+					'label'         => __( 'Content Area Background Color', 'alcatraz-designer' ),
+					'section'       => 'colors',
+					'settings'      => 'alcatraz_designer_options[content_bg_color]',
+					'show_opacity'  => true,
+					'palette'       => $bg_colors,
+				)
+			)
+		);
+
+		// Content Area Text.
+		$wp_customize->add_setting(
+			'alcatraz_designer_options[content_text_color]',
+			array(
+				'default'     => $defaults['content_text_color'],
+				'type'        => 'option',
+				'capability'  => 'edit_theme_options',
+				'transport'   => 'postMessage'
+			)
+		);
+		$wp_customize->add_control(
+			new Alcatraz_Customize_Alpha_Color_Control(
+				$wp_customize,
+				'alcatraz_designer_options_content_text_color',
+				array(
+					'label'         => __( 'Content Area Text Color', 'alcatraz-designer' ),
+					'section'       => 'colors',
+					'settings'      => 'alcatraz_designer_options[content_text_color]',
+					'show_opacity'  => true,
+					'palette'       => $text_colors,
+				)
+			)
+		);
+
 		// Sidebar Background.
 		$wp_customize->add_setting(
 			'alcatraz_designer_options[sidebar_bg_color]',
@@ -373,6 +397,8 @@ class Alcatraz_Designer_Customize {
 			'menu_text_color'     => '#ffffff',
 			'sub_menu_bg_color'   => '#ffffff',
 			'sub_menu_text_color' => '#6E9AA2',
+			'content_bg_color'    => 'rgba(0,0,0,0)',
+			'content_text_color'  => '#222222',
 			'sidebar_bg_color'    => '#666666',
 			'sidebar_text_color'  => '#eeeeee',
 			'footer_bg_color'     => '#222222',
