@@ -65,6 +65,12 @@
 		});
 	});
 
+	wp.customize( 'alcatraz_designer_options[content_link_color]', function( value ) {
+		value.bind( function( to ) {
+			$( '.entry-content a' ).css( 'color', to );
+		});
+	});
+
 	wp.customize( 'alcatraz_designer_options[sidebar_bg_color]', function( value ) {
 		value.bind( function( to ) {
 			$( '.primary-sidebar' ).css( 'background-color', to );
@@ -77,6 +83,12 @@
 		});
 	});
 
+	wp.customize( 'alcatraz_designer_options[sidebar_link_color]', function( value ) {
+		value.bind( function( to ) {
+			$( '.primary-sidebar a, .alcatraz-sub-page-nav li a' ).css( 'color', to );
+		});
+	});
+
 	wp.customize( 'alcatraz_designer_options[footer_bg_color]', function( value ) {
 		value.bind( function( to ) {
 			$( '.site-footer' ).css( 'background-color', to );
@@ -86,6 +98,12 @@
 	wp.customize( 'alcatraz_designer_options[footer_text_color]', function( value ) {
 		value.bind( function( to ) {
 			$( '.site-footer' ).css( 'color', to );
+		});
+	});
+
+	wp.customize( 'alcatraz_designer_options[footer_link_color]', function( value ) {
+		value.bind( function( to ) {
+			$( '.site-footer a' ).css( 'color', to );
 		});
 	});
 

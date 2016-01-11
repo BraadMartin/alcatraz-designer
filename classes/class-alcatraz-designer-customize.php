@@ -281,6 +281,30 @@ class Alcatraz_Designer_Customize {
 			)
 		);
 
+		// Content Area Link Color.
+		$wp_customize->add_setting(
+			'alcatraz_designer_options[content_link_color]',
+			array(
+				'default'     => $defaults['content_link_color'],
+				'type'        => 'option',
+				'capability'  => 'edit_theme_options',
+				'transport'   => 'postMessage'
+			)
+		);
+		$wp_customize->add_control(
+			new Alcatraz_Customize_Alpha_Color_Control(
+				$wp_customize,
+				'alcatraz_designer_options_content_link_color',
+				array(
+					'label'         => __( 'Content Area Link Color', 'alcatraz-designer' ),
+					'section'       => 'colors',
+					'settings'      => 'alcatraz_designer_options[content_link_color]',
+					'show_opacity'  => true,
+					'palette'       => $content_link_colors,
+				)
+			)
+		);
+
 		// Sidebar Background.
 		$wp_customize->add_setting(
 			'alcatraz_designer_options[sidebar_bg_color]',
@@ -330,6 +354,30 @@ class Alcatraz_Designer_Customize {
 			)
 		);
 
+		// Sidebar Link Color.
+		$wp_customize->add_setting(
+			'alcatraz_designer_options[sidebar_link_color]',
+			array(
+				'default'     => $defaults['sidebar_link_color'],
+				'type'        => 'option',
+				'capability'  => 'edit_theme_options',
+				'transport'   => 'postMessage'
+			)
+		);
+		$wp_customize->add_control(
+			new Alcatraz_Customize_Alpha_Color_Control(
+				$wp_customize,
+				'alcatraz_designer_options_sidebar_link_color',
+				array(
+					'label'         => __( 'Sidebar Link Color', 'alcatraz-designer' ),
+					'section'       => 'colors',
+					'settings'      => 'alcatraz_designer_options[sidebar_link_color]',
+					'show_opacity'  => true,
+					'palette'       => $content_link_colors,
+				)
+			)
+		);
+
 		// Footer Background.
 		$wp_customize->add_setting(
 			'alcatraz_designer_options[footer_bg_color]',
@@ -374,6 +422,30 @@ class Alcatraz_Designer_Customize {
 					'settings'      => 'alcatraz_designer_options[footer_text_color]',
 					'show_opacity'  => true,
 					'palette'       => $text_colors,
+				)
+			)
+		);
+
+		// Footer Link Color.
+		$wp_customize->add_setting(
+			'alcatraz_designer_options[footer_link_color]',
+			array(
+				'default'     => $defaults['footer_link_color'],
+				'type'        => 'option',
+				'capability'  => 'edit_theme_options',
+				'transport'   => 'postMessage'
+			)
+		);
+		$wp_customize->add_control(
+			new Alcatraz_Customize_Alpha_Color_Control(
+				$wp_customize,
+				'alcatraz_designer_options_footer_link_color',
+				array(
+					'label'         => __( 'Footer Link Color', 'alcatraz-designer' ),
+					'section'       => 'colors',
+					'settings'      => 'alcatraz_designer_options[footer_link_color]',
+					'show_opacity'  => true,
+					'palette'       => $content_link_colors,
 				)
 			)
 		);
