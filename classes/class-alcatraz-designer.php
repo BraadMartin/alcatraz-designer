@@ -105,6 +105,10 @@ class Alcatraz_Designer {
 			$styles[] = '.content-area, .content-area h1, .content-area h2, .content-area h3, .content-area h4, .content-area h5, .content-area h6 { color: ' . $this->options['content_text_color'] . '; }';
 		}
 
+		if ( ! empty( $this->options['content_link_color'] ) ) {
+			$styles[] = '.entry-content a { color: ' . $this->options['content_link_color'] . '; }';
+		}
+
 		if ( ! empty( $this->options['sidebar_bg_color'] ) ) {
 			$styles[] = '.primary-sidebar { background-color: ' . $this->options['sidebar_bg_color'] . '; }';
 		}
@@ -113,12 +117,20 @@ class Alcatraz_Designer {
 			$styles[] = '.primary-sidebar, .primary-sidebar h1, .primary-sidebar h2, .primary-sidebar h3, .primary-sidebar h4, .primary-sidebar h5, .primary-sidebar h6 { color: ' . $this->options['sidebar_text_color'] . '; }';
 		}
 
+		if ( ! empty( $this->options['sidebar_link_color'] ) ) {
+			$styles[] = '.primary-sidebar a, .alcatraz-sub-page-nav li a { color: ' . $this->options['sidebar_link_color'] . '; }';
+		}
+
 		if ( ! empty( $this->options['footer_bg_color'] ) ) {
 			$styles[] = '.site-footer { background-color: ' . $this->options['footer_bg_color'] . '; }';
 		}
 
 		if ( ! empty( $this->options['footer_text_color'] ) ) {
 			$styles[] = '.site-footer { color: ' . $this->options['footer_text_color'] . '; }';
+		}
+
+		if ( ! empty( $this->options['footer_link_color'] ) ) {
+			$styles[] = '.site-footer a { color: ' . $this->options['footer_link_color'] . '; }';
 		}
 
 		printf(
